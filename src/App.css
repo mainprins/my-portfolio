@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+ 
+.text {
+  color: transparent;
+  font-size: 2rem;
+  font-weight: bolder;
+  -webkit-text-stroke: 1px #66a586;
+  position: relative;
+  cursor: pointer;
+}
+
+.text::before{
+  content: "DOWNLOAD CV";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  overflow: hidden;
+  color: #66a586;
+  border-right: 6px solid #66a586;
+  transition: 1s ease-in-out;
+}
+
+.text:hover::before{
+  width: 105%;
+  filter: drop-shadow(0 0 25px #66a586);
+}
+.web{
+  position: relative;
+}
+
+.web::before{
+  content: '';
+  position: absolute;
+  background: #1c1917;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid #66a586;
+  animation: typing 1.5s steps(10) infinite;
+}
+
+.profile {
+  box-shadow: 0 0 20px #66a586,0 0 40px #66a586;
+  animation: glow-border 1.5s infinite alternate;
+}
+
+@keyframes glow-border {
+  0% {
+      box-shadow: 0 0 10px #66a586,0 0 20px #66a586;
+  }
+
+  100% {
+      box-shadow: 0 0 30px #66a586,0 0 60px #66a586;
+  }
+}
+
+@keyframes typing {
+  100% {
+    left: 42%;
+    margin: 0 -35px 0 35px;
+  }
+}
