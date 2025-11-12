@@ -3,15 +3,15 @@ import React, { useState } from 'react'
 const projects = [
     {
         tagline: "CHAT APPLICATION",
-        name: "CHATAPP",
+        name: "CHATTILY",
         desc: "It's a mern stack chatting app.",
         src: "/messages.png"
     },
     {
-        tagline: "PORTFOLIO WEBSITE",
-        name: "MY PORTFOLIO",
-        desc: "It's a react based portfolio.",
-        src: "/portfolio.png"
+        tagline: "RESUME CREATOR",
+        name: "MeroResume",
+        desc: "It's a AI powered resume creator.",
+        src: "/meroResume.png"
     },
 ]
 

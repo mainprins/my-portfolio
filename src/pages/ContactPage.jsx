@@ -33,7 +33,6 @@ const ContactPage = (props) => {
         <img src="/bajgain.jpg" alt="princeBajgain" className="w-[80%] rounded-xl" />
       </figure>
 
-      {/* 🔥 FIX: Removed duplicate div */}
       <div className="flex w-[80%] mb-3 flex-wrap border border-[#66a586] rounded-xl xl:w-1/2">
         <form
           className="flex flex-col text-white gap-6 w-full xl:w-1/2 p-10"
